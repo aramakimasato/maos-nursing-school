@@ -15,17 +15,14 @@
         header {
             background: #007ACC;
             color: #fff;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px 0;
         }
         header img {
             width: 100%;
             height: auto;
             max-height: 300px;
-        }
-        header h1 {
-            margin: 10px 0;
-            font-size: 36px;
+            object-fit: cover;
         }
         nav {
             background: #003366;
@@ -41,12 +38,11 @@
         .container {
             padding: 20px;
         }
-        .cta {
-            background: #007ACC;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin: 20px 0;
+        #testimonials, #instructors {
+            margin-top: 30px;
+        }
+        .testimonial, .instructor {
+            margin-bottom: 20px;
         }
         .testimonial img {
             width: 150px;
@@ -74,7 +70,7 @@
         <a href="#about">概要</a>
         <a href="#courses">コース</a>
         <a href="#testimonials">合格者の声</a>
-        <a href="#contact">お問い合わせ</a>
+        <a href="#instructors">講師紹介</a>
     </nav>
     <div class="container">
         <section id="about">
@@ -86,6 +82,21 @@
             <div class="testimonial">
                 <img src="看護学生.jpg" alt="看護学生">
                 <p><strong>合格者S.Hさん:</strong> 「AIと個別指導のおかげで第一志望校に合格しました！」</p>
+            </div>
+        </section>
+        <section id="instructors">
+            <h2>講師紹介</h2>
+            <div class="instructor">
+                <h3>校長: 荒蒔 雅人</h3>
+                <p>看護教育における豊富な経験を活かし、学生一人ひとりの夢をサポートします。</p>
+            </div>
+            <div class="instructor">
+                <h3>専任講師: 伊藤 磨央</h3>
+                <p>AI技術を駆使した効果的な学習方法の開発を担当します。</p>
+            </div>
+            <div class="instructor">
+                <h3>専任講師: 重光 雄介</h3>
+                <p>学生の学力向上を全力でサポートします。</p>
             </div>
         </section>
     </div>
