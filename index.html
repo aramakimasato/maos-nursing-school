@@ -12,18 +12,6 @@
             line-height: 1.6;
             background-color: #f4f4f4;
         }
-        header {
-            background: #007ACC;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        header img {
-            width: 100%;
-            height: auto;
-            max-height: 300px;
-            object-fit: cover;
-        }
         nav {
             background: #003366;
             color: #fff;
@@ -38,13 +26,20 @@
         .container {
             padding: 20px;
         }
-        #testimonials, #instructors {
+        .cta {
+            background: #007ACC;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        #testimonials, #instructors, #contact {
             margin-top: 30px;
         }
         .testimonial, .instructor {
             margin-bottom: 20px;
         }
-        .testimonial img {
+        .testimonial img, .instructor img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -61,21 +56,25 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="看護師女性.jpg" alt="看護師女性">
-        <h1>MAoS看護学校予備校</h1>
-        <p>AIと個別指導で、どこよりも安く、あなたの夢をサポートします！</p>
-    </header>
     <nav>
         <a href="#about">概要</a>
         <a href="#courses">コース</a>
         <a href="#testimonials">合格者の声</a>
         <a href="#instructors">講師紹介</a>
+        <a href="#contact">お問い合わせ</a>
     </nav>
     <div class="container">
         <section id="about">
             <h2>MAoS看護学校予備校とは</h2>
             <p>MAoS看護学校予備校は、AI技術と個別指導を融合し、経済的に困難な方々にも質の高い教育を提供します。</p>
+        </section>
+        <section id="courses">
+            <h2>コース紹介</h2>
+            <ul>
+                <li>基礎コース</li>
+                <li>応用コース</li>
+                <li>直前対策コース</li>
+            </ul>
         </section>
         <section id="testimonials">
             <h2>合格者の声</h2>
@@ -87,6 +86,7 @@
         <section id="instructors">
             <h2>講師紹介</h2>
             <div class="instructor">
+                <img src="看護師女性.jpg" alt="講師 荒蒔雅人">
                 <h3>校長: 荒蒔 雅人</h3>
                 <p>看護教育における豊富な経験を活かし、学生一人ひとりの夢をサポートします。</p>
             </div>
@@ -99,6 +99,15 @@
                 <p>学生の学力向上を全力でサポートします。</p>
             </div>
         </section>
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <p>詳細や無料体験については、以下のフォームからご連絡ください。</p>
+            <a href="https://line.me/R/ti/p/~your-line-id">LINEでお問い合わせ</a>
+        </section>
+        <div class="cta">
+            <h2>無料体験申し込み受付中！</h2>
+            <p>今すぐLINEで簡単申し込み！</p>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 MAoS看護学校予備校. All Rights Reserved.</p>
