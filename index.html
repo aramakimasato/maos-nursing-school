@@ -9,105 +9,121 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
             background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background: #007ACC;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
         }
         nav {
             background: #003366;
-            color: #fff;
-            padding: 10px;
+            color: white;
+            padding: 10px 0;
             text-align: center;
         }
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             margin: 0 15px;
+            font-size: 18px;
         }
         .container {
             padding: 20px;
         }
-        .cta {
-            background: #007ACC;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin: 20px 0;
+        section {
+            margin-bottom: 40px;
         }
-        #testimonials, #instructors, #contact {
-            margin-top: 30px;
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #007ACC;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
-        .testimonial, .instructor {
+        .faq, .news, .courses {
             margin-bottom: 20px;
         }
-        .testimonial img, .instructor img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 10px auto;
-            display: block;
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: white;
         }
         footer {
             background: #003366;
-            color: #fff;
+            color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>MAoS看護学校予備校</h1>
+        <p>AIと個別指導で、どこよりも安く、あなたの夢をサポートします！</p>
+    </header>
     <nav>
         <a href="#about">概要</a>
         <a href="#courses">コース</a>
-        <a href="#testimonials">合格者の声</a>
-        <a href="#instructors">講師紹介</a>
+        <a href="#news">お知らせ</a>
+        <a href="#faq">よくある質問</a>
         <a href="#contact">お問い合わせ</a>
     </nav>
     <div class="container">
         <section id="about">
-            <h2>MAoS看護学校予備校とは</h2>
+            <h2>予備校概要</h2>
             <p>MAoS看護学校予備校は、AI技術と個別指導を融合し、経済的に困難な方々にも質の高い教育を提供します。</p>
         </section>
         <section id="courses">
             <h2>コース紹介</h2>
-            <ul>
-                <li>基礎コース</li>
-                <li>応用コース</li>
-                <li>直前対策コース</li>
-            </ul>
-        </section>
-        <section id="testimonials">
-            <h2>合格者の声</h2>
-            <div class="testimonial">
-                <img src="看護学生.jpg" alt="看護学生">
-                <p><strong>合格者S.Hさん:</strong> 「AIと個別指導のおかげで第一志望校に合格しました！」</p>
+            <div class="card">
+                <h3>基礎コース</h3>
+                <p>看護学校受験に必要な基礎学力をしっかりサポートします。</p>
+            </div>
+            <div class="card">
+                <h3>応用コース</h3>
+                <p>看護学校受験に向けた応用力を鍛えるカリキュラムを提供します。</p>
+            </div>
+            <div class="card">
+                <h3>直前対策コース</h3>
+                <p>直前の準備をしっかり整え、合格へのラストスパートをお手伝いします。</p>
             </div>
         </section>
-        <section id="instructors">
-            <h2>講師紹介</h2>
-            <div class="instructor">
-                <img src="看護師女性.jpg" alt="講師 荒蒔雅人">
-                <h3>校長: 荒蒔 雅人</h3>
-                <p>看護教育における豊富な経験を活かし、学生一人ひとりの夢をサポートします。</p>
+        <section id="news">
+            <h2>お知らせ・コラム</h2>
+            <div class="card">
+                <h3>社会人向け短期集中プラン</h3>
+                <p>短期間で効率よく学びたい社会人の方に最適なプランを開始しました。</p>
             </div>
-            <div class="instructor">
-                <h3>専任講師: 伊藤 磨央</h3>
-                <p>AI技術を駆使した効果的な学習方法の開発を担当します。</p>
+            <div class="card">
+                <h3>受験直前対策セミナー</h3>
+                <p>模擬試験や面接練習を含む特別セミナーを実施予定です。</p>
             </div>
-            <div class="instructor">
-                <h3>専任講師: 重光 雄介</h3>
-                <p>学生の学力向上を全力でサポートします。</p>
+        </section>
+        <section id="faq">
+            <h2>よくある質問</h2>
+            <div class="faq">
+                <h3>Q: 授業はオンラインですか？</h3>
+                <p>A: はい、全ての授業はオンラインで受講可能です。</p>
+            </div>
+            <div class="faq">
+                <h3>Q: 支払い方法は？</h3>
+                <p>A: クレジットカード、銀行振込がご利用いただけます。</p>
             </div>
         </section>
         <section id="contact">
             <h2>お問い合わせ</h2>
-            <p>詳細や無料体験については、以下のフォームからご連絡ください。</p>
-            <a href="https://line.me/R/ti/p/~your-line-id">LINEでお問い合わせ</a>
+            <p>詳細や無料体験については、以下のリンクからご連絡ください。</p>
+            <p><a href="https://line.me/R/ti/p/~your-line-id">LINEでお問い合わせ</a></p>
         </section>
-        <div class="cta">
-            <h2>無料体験申し込み受付中！</h2>
-            <p>今すぐLINEで簡単申し込み！</p>
-        </div>
     </div>
     <footer>
         <p>&copy; 2024 MAoS看護学校予備校. All Rights Reserved.</p>
