@@ -48,25 +48,26 @@
         h2 {
             color: #003366;
         }
-        .testimonials {
+        .instructors, .testimonials {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: space-between;
         }
-        .testimonial {
+        .instructor, .testimonial {
             flex: 1;
             min-width: 300px;
             background: #f4f4f4;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            text-align: center;
         }
-        .testimonial h3 {
+        .instructor h3, .testimonial h3 {
             color: #007ACC;
             margin-bottom: 10px;
         }
-        .testimonial p {
+        .instructor p, .testimonial p {
             font-size: 14px;
             color: #555;
             line-height: 1.6;
@@ -89,10 +90,36 @@
         <a href="#about">概要</a>
         <a href="#services">サービス</a>
         <a href="#plans">プラン</a>
+        <a href="#instructors">講師紹介</a>
         <a href="#testimonials">合格者の声</a>
         <a href="#contact">お問い合わせ</a>
     </nav>
     <div class="container">
+        <!-- 講師紹介 -->
+        <section id="instructors">
+            <h2>講師紹介</h2>
+            <div class="instructors">
+                <div class="instructor">
+                    <h3>校長: 荒蒔 雅人</h3>
+                    <p>社会人経験を経て看護師へと転職し、看護学校受験の困難さを自ら体験。<br>
+                    現在は豊富な実務経験を活かし、受験生一人ひとりのニーズに応じた柔軟な指導を行っています。<br>
+                    「基礎から学び直したい」「社会人でも受験に成功したい」という学生を全力でサポートします。</p>
+                </div>
+                <div class="instructor">
+                    <h3>専任講師: 伊藤 磨央</h3>
+                    <p>看護師資格を持つと同時に、AI技術者としても活躍。<br>
+                    看護教育におけるAI活用の第一人者であり、効率的で的確な学習サポートを提供します。<br>
+                    難解な問題でもAIの力と経験を融合し、受験生をサポートしています。</p>
+                </div>
+                <div class="instructor">
+                    <h3>専任講師: 重光 雄介</h3>
+                    <p>看護学校の運営支援に長年携わり、教育現場を裏方として支えるプロフェッショナル。<br>
+                    学生の学力向上に必要な仕組みやカリキュラムを構築し、合格に向けた実践的な指導を提供します。<br>
+                    特に学習計画の策定や模試の問題作成で高い評価を得ています。</p>
+                </div>
+            </div>
+        </section>
+        <!-- 合格者の声 -->
         <section id="testimonials">
             <h2>合格者の声</h2>
             <div class="testimonials">
