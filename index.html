@@ -6,179 +6,118 @@
     <title>MAoS看護学校予備校</title>
     <style>
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.8;
-            background-color: #f9fafc;
-            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
         }
         header {
-            background: linear-gradient(135deg, #007ACC, #003366);
+            background: #007ACC;
             color: #fff;
-            padding: 40px 20px;
             text-align: center;
+            padding: 30px 0;
         }
         header h1 {
-            font-size: 36px;
             margin: 0;
+            font-size: 28px;
         }
         header p {
             margin: 10px 0 0;
-            font-size: 18px;
-            opacity: 0.9;
+            font-size: 16px;
         }
         nav {
             background: #003366;
             color: #fff;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            text-align: center;
+            padding: 10px;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #00bfff;
         }
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
+            max-width: 1100px;
+            margin: auto;
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
         section {
             margin-bottom: 40px;
         }
         h2 {
-            color: #007ACC;
-            font-size: 28px;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            color: #003366;
         }
-        ul {
-            padding-left: 20px;
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
         }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .card {
+        .testimonial {
+            flex: 1;
+            min-width: 300px;
             background: #f4f4f4;
             padding: 20px;
-            margin-bottom: 20px;
-            border-left: 5px solid #007ACC;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial h3 {
+            color: #007ACC;
+            margin-bottom: 10px;
+        }
+        .testimonial p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
         }
         footer {
             background: #003366;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        footer p {
-            margin: 0;
-            font-size: 14px;
+            padding: 10px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>MAoS看護学校予備校</h1>
-        <p>スマホ一つで学べる、AIとLINEで効率的に合格を目指そう！</p>
+        <p>AIと専任講師のハイブリッド学習で夢を叶えます</p>
     </header>
     <nav>
         <a href="#about">概要</a>
-        <a href="#features">特徴</a>
-        <a href="#subjects">サポート科目</a>
-        <a href="#instructors">講師紹介</a>
-        <a href="#pricing">料金プラン</a>
+        <a href="#services">サービス</a>
+        <a href="#plans">プラン</a>
+        <a href="#testimonials">合格者の声</a>
         <a href="#contact">お問い合わせ</a>
     </nav>
     <div class="container">
-        <section id="about">
-            <h2>MAoS看護学校予備校とは</h2>
-            <p>
-                MAoS看護学校予備校は、AIとLINE Botを活用して効率的に学べる新しい形の予備校です。
-                問題をLINEで自動出題し、受験生がスマホで解答。AIによる即時フィードバックと専任講師のサポートで、最短ルートで看護学校合格を目指します。
-            </p>
-        </section>
-        <section id="features">
-            <h2>サービスの特徴</h2>
-            <ul>
-                <li><strong>AIフィードバック:</strong> 解答後すぐにAIがアドバイス。</li>
-                <li><strong>LINE Botで24時間対応:</strong> いつでもどこでも質問可能。</li>
-                <li><strong>学習進捗管理:</strong> 解答データを記録し、次の課題を提案。</li>
-                <li><strong>模擬試験対策:</strong> 定期的な模擬試験で実践力を強化。</li>
-            </ul>
-        </section>
-        <section id="subjects">
-            <h2>サポート科目</h2>
-            <div class="card">
-                <h3>国語</h3>
-                <p>文章読解力を鍛え、小論文にも対応可能な表現力を養います。</p>
+        <section id="testimonials">
+            <h2>合格者の声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h3>社会人から合格: S.Hさん</h3>
+                    <p>「10年間社会人として働いていましたが、看護師を目指して勉強を始めました。<br>
+                    基礎から学び直す必要があり不安でしたが、MAoS予備校のAIサポートと丁寧な指導のおかげで第一志望に合格！<br>
+                    模試の結果分析が特に役立ちました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>現役生の成功: A.Mさん</h3>
+                    <p>「勉強が苦手で、自信がありませんでした。でも、MAoSのLINEを使った問題解説がとてもわかりやすくて、毎日続けられました。<br>
+                    志望校の過去問対策も充実していて、安心して本番を迎えることができました！」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>初めての挑戦: K.Tさん</h3>
+                    <p>「高校卒業後に看護師を目指すのは不安が大きかったですが、AIによる24時間質問対応のおかげで困ったときにすぐ解決できました。<br>
+                    ベーシックプランでも十分な内容で、金銭的な負担が少なく助かりました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>男性でも挑戦可能: Y.Nさん</h3>
+                    <p>「看護師＝女性というイメージが強く、周りに相談できる人がいなかったのですが、MAoSの講師が親身に相談に乗ってくれました。<br>
+                    男性でも活躍できる看護師の魅力を知り、無事に合格することができました。」</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>数学</h3>
-                <p>計算力と論理的思考を徹底的に指導。看護試験で必要な基礎数学をカバーします。</p>
-            </div>
-            <div class="card">
-                <h3>英語</h3>
-                <p>看護用語を含む実践的な英語力を育成。基礎文法から長文読解まで対応します。</p>
-            </div>
-            <div class="card">
-                <h3>理科</h3>
-                <p>看護に必要な生物・化学を中心に学習し、基礎から応用までしっかりサポートします。</p>
-            </div>
-        </section>
-        <section id="instructors">
-            <h2>講師紹介</h2>
-            <div class="card">
-                <h3>校長: 荒蒔 雅人</h3>
-                <p>社会人を経て看護師として活躍。その経験を活かし、多様な背景を持つ受験生一人ひとりに寄り添い、合格への道をサポートします。</p>
-            </div>
-            <div class="card">
-                <h3>専任講師: 伊藤 磨央</h3>
-                <p>看護師であり、AI技術者としても活躍中。最先端のAI技術を学習に応用し、受験生が効率的に学べる環境を提供します。</p>
-            </div>
-            <div class="card">
-                <h3>専任講師: 重光 雄介</h3>
-                <p>看護学校での指導経験が豊富。看護教育の現場を熟知しており、的確なアドバイスと実践的なサポートを行います。</p>
-            </div>
-        </section>
-        <section id="pricing">
-            <h2>料金プラン</h2>
-            <div class="card">
-                <h3>ベーシックプラン</h3>
-                <p>月額 5,000円～7,000円</p>
-                <p>AIによる問題出題・フィードバック</p>
-            </div>
-            <div class="card">
-                <h3>プレミアムプラン</h3>
-                <p>月額 10,000円～15,000円</p>
-                <p>AIサポート＋専任講師のフィードバック</p>
-            </div>
-            <div class="card">
-                <h3>フルサポートプラン</h3>
-                <p>月額 20,000円～30,000円</p>
-                <p>全機能＋個別学習プラン設計</p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>お問い合わせ</h2>
-            <p>LINEでお気軽にお問い合わせください！</p>
-            <p><a href="https://line.me" style="color: #007ACC; text-decoration: none; font-weight: bold;">LINEで質問する</a></p>
         </section>
     </div>
     <footer>
