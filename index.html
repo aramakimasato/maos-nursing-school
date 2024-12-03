@@ -17,14 +17,15 @@
             background-color: #007ACC;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 20px;
         }
         header h1 {
             margin: 0;
-            font-size: 28px;
+            font-size: 36px;
         }
         header p {
-            font-size: 16px;
+            font-size: 18px;
+            margin-top: 10px;
         }
         nav {
             background: #003366;
@@ -37,6 +38,16 @@
             text-decoration: none;
             margin: 0 15px;
         }
+        .intro {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .intro h2 {
+            color: #007ACC;
+            margin-bottom: 10px;
+        }
         .container {
             max-width: 1100px;
             margin: 30px auto;
@@ -47,38 +58,30 @@
         }
         h2 {
             color: #007ACC;
-        }
-        .testimonials, .instructors {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-        .testimonial, .instructor {
-            flex: 1;
-            min-width: 300px;
-            background: #f4f4f4;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .testimonial h3, .instructor h3 {
-            color: #007ACC;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            font-size: 16px;
+            text-align: center;
+            background-color: #f9f9f9;
         }
         table th, table td {
+            padding: 15px;
             border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
         }
         table th {
-            background-color: #f4f4f4;
+            background-color: #007ACC;
+            color: #fff;
+            font-weight: bold;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table tr:hover {
+            background-color: #eaf4ff;
         }
         footer {
             background-color: #003366;
@@ -92,55 +95,23 @@
 <body>
     <header>
         <h1>MAoS看護学校予備校</h1>
-        <p>AIと専任講師のハイブリッド学習で夢を叶えます</p>
+        <p>AIと専任講師の力で、あなたの看護師への夢を全力サポート</p>
     </header>
     <nav>
+        <a href="#intro">MAoSの魅力</a>
+        <a href="#comparison">他社との比較</a>
         <a href="#testimonials">合格者の声</a>
         <a href="#instructors">講師紹介</a>
-        <a href="#comparison">他社との比較</a>
         <a href="#legal">特定商取引法表記</a>
     </nav>
+    <!-- アピールポイント -->
+    <section id="intro" class="intro">
+        <h2>あなたの成功を私たちが支えます</h2>
+        <p>MAoS看護学校予備校は、AI技術と経験豊富な講師陣による<br>
+           ハイブリッドな学習環境を提供します。他にはない24時間対応の質問サポートや、<br>
+           個別指導で、社会人・現役生問わず多くの受験生が第一志望校に合格しています。</p>
+    </section>
     <div class="container">
-        <!-- 合格者の声 -->
-        <section id="testimonials">
-            <h2>合格者の声</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <h3>社会人から合格: S.Hさん</h3>
-                    <p>「10年間社会人として働いていましたが、MAoS予備校のAIサポートのおかげで第一志望に合格！」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>現役生の成功: A.Mさん</h3>
-                    <p>「LINEを使った解説がわかりやすく、試験も安心して受けられました。」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>初めての挑戦: K.Tさん</h3>
-                    <p>「AIの質問対応で不安を解消でき、合格することができました。」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>男性でも挑戦可能: Y.Nさん</h3>
-                    <p>「親身な指導のおかげで自信を持ち、合格を果たしました！」</p>
-                </div>
-            </div>
-        </section>
-        <!-- 講師紹介 -->
-        <section id="instructors">
-            <h2>講師紹介</h2>
-            <div class="instructors">
-                <div class="instructor">
-                    <h3>校長: 荒蒔 雅人</h3>
-                    <p>社会人経験を経て看護師へと転職し、受験生のサポートを全力で行います。</p>
-                </div>
-                <div class="instructor">
-                    <h3>専任講師: 伊藤 磨央</h3>
-                    <p>AIと看護の融合により、効率的で正確な学習サポートを提供します。</p>
-                </div>
-                <div class="instructor">
-                    <h3>専任講師: 重光 雄介</h3>
-                    <p>教育現場の裏方を支え、学習計画と模試作成で高い評価を得ています。</p>
-                </div>
-            </div>
-        </section>
         <!-- 他社との比較 -->
         <section id="comparison">
             <h2>他の予備校との比較</h2>
@@ -181,10 +152,55 @@
                 </tbody>
             </table>
         </section>
+        <!-- 合格者の声 -->
+        <section id="testimonials">
+            <h2>合格者の声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h3>社会人から合格: S.Hさん</h3>
+                    <p>「10年間社会人として働いていましたが、MAoS予備校のAIサポートのおかげで第一志望に合格！」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>現役生の成功: A.Mさん</h3>
+                    <p>「LINEを使った解説がわかりやすく、試験も安心して受けられました。」</p>
+                </div>
+            </div>
+        </section>
+        <!-- 講師紹介 -->
+        <section id="instructors">
+            <h2>講師紹介</h2>
+            <div class="instructors">
+                <div class="instructor">
+                    <h3>校長: 荒蒔 雅人</h3>
+                    <p>社会人経験を経て看護師へと転職。受験生一人ひとりのニーズに応じた指導を行います。</p>
+                </div>
+            </div>
+        </section>
         <!-- 特定商取引法表記 -->
         <section id="legal">
             <h2>特定商取引法に基づく表記</h2>
-            <p>法的に必要な情報はこちらをご覧ください。</p>
+            <table>
+                <tr>
+                    <th>販売事業者の名称</th>
+                    <td>MAoS看護学校予備校</td>
+                </tr>
+                <tr>
+                    <th>代表者または責任者の氏名</th>
+                    <td>荒蒔 雅人</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td>栃木県宇都宮市ゆいの杜3-10-1</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>090-7723-6383</td>
+                </tr>
+                <tr>
+                    <th>商品代金以外の必要料金</th>
+                    <td>なし</td>
+                </tr>
+            </table>
         </section>
     </div>
     <footer>
