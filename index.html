@@ -48,13 +48,13 @@
         h2 {
             color: #007ACC;
         }
-        .instructors, .testimonials {
+        .testimonials, .instructors {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: space-between;
         }
-        .instructor, .testimonial {
+        .testimonial, .instructor {
             flex: 1;
             min-width: 300px;
             background: #f4f4f4;
@@ -63,16 +63,9 @@
             border-radius: 5px;
             text-align: center;
         }
-        .instructor h3, .testimonial h3 {
+        .testimonial h3, .instructor h3 {
             color: #007ACC;
             margin-bottom: 10px;
-        }
-        footer {
-            background-color: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 30px;
         }
         table {
             width: 100%;
@@ -82,10 +75,17 @@
         table th, table td {
             border: 1px solid #ddd;
             padding: 10px;
-            text-align: left;
+            text-align: center;
         }
         table th {
             background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -95,88 +95,96 @@
         <p>AIと専任講師のハイブリッド学習で夢を叶えます</p>
     </header>
     <nav>
-        <a href="#about">概要</a>
-        <a href="#services">サービス</a>
-        <a href="#plans">プラン</a>
-        <a href="#instructors">講師紹介</a>
         <a href="#testimonials">合格者の声</a>
+        <a href="#instructors">講師紹介</a>
+        <a href="#comparison">他社との比較</a>
         <a href="#legal">特定商取引法表記</a>
     </nav>
     <div class="container">
-        <!-- 講師紹介 -->
-        <section id="instructors">
-            <h2>講師紹介</h2>
-            <div class="instructors">
-                <div class="instructor">
-                    <h3>校長: 荒蒔 雅人</h3>
-                    <p>社会人経験を経て看護師へと転職し、看護学校受験の困難さを自ら体験。<br>
-                    現在は豊富な実務経験を活かし、受験生一人ひとりのニーズに応じた柔軟な指導を行っています。</p>
-                </div>
-                <div class="instructor">
-                    <h3>専任講師: 伊藤 磨央</h3>
-                    <p>看護師資格を持つと同時に、AI技術者としても活躍。効率的で的確な学習サポートを提供します。</p>
-                </div>
-                <div class="instructor">
-                    <h3>専任講師: 重光 雄介</h3>
-                    <p>看護学校の運営支援に長年携わり、教育現場を支えるプロフェッショナル。</p>
-                </div>
-            </div>
-        </section>
         <!-- 合格者の声 -->
         <section id="testimonials">
             <h2>合格者の声</h2>
             <div class="testimonials">
                 <div class="testimonial">
                     <h3>社会人から合格: S.Hさん</h3>
-                    <p>「基礎から学び直す必要がありましたが、MAoS予備校のサポートのおかげで第一志望に合格！」</p>
+                    <p>「10年間社会人として働いていましたが、MAoS予備校のAIサポートのおかげで第一志望に合格！」</p>
                 </div>
                 <div class="testimonial">
                     <h3>現役生の成功: A.Mさん</h3>
-                    <p>「志望校の過去問対策も充実していて、安心して本番を迎えられました！」</p>
+                    <p>「LINEを使った解説がわかりやすく、試験も安心して受けられました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>初めての挑戦: K.Tさん</h3>
+                    <p>「AIの質問対応で不安を解消でき、合格することができました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>男性でも挑戦可能: Y.Nさん</h3>
+                    <p>「親身な指導のおかげで自信を持ち、合格を果たしました！」</p>
                 </div>
             </div>
+        </section>
+        <!-- 講師紹介 -->
+        <section id="instructors">
+            <h2>講師紹介</h2>
+            <div class="instructors">
+                <div class="instructor">
+                    <h3>校長: 荒蒔 雅人</h3>
+                    <p>社会人経験を経て看護師へと転職し、受験生のサポートを全力で行います。</p>
+                </div>
+                <div class="instructor">
+                    <h3>専任講師: 伊藤 磨央</h3>
+                    <p>AIと看護の融合により、効率的で正確な学習サポートを提供します。</p>
+                </div>
+                <div class="instructor">
+                    <h3>専任講師: 重光 雄介</h3>
+                    <p>教育現場の裏方を支え、学習計画と模試作成で高い評価を得ています。</p>
+                </div>
+            </div>
+        </section>
+        <!-- 他社との比較 -->
+        <section id="comparison">
+            <h2>他の予備校との比較</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>特徴</th>
+                        <th>MAoS看護学校予備校</th>
+                        <th>他の予備校</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>対応時間</td>
+                        <td>24時間対応（AI質問サポート）</td>
+                        <td>営業時間内のみ</td>
+                    </tr>
+                    <tr>
+                        <td>費用</td>
+                        <td>業界最安値（約30%安い）</td>
+                        <td>一般的な相場</td>
+                    </tr>
+                    <tr>
+                        <td>個別指導</td>
+                        <td>看護師による個別指導あり</td>
+                        <td>模試や教材提供のみ</td>
+                    </tr>
+                    <tr>
+                        <td>利用の簡便性</td>
+                        <td>LINEで簡単操作</td>
+                        <td>専用システムの利用が必要</td>
+                    </tr>
+                    <tr>
+                        <td>学習計画</td>
+                        <td>AIと講師によるカスタマイズ</td>
+                        <td>固定プランのみ</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <!-- 特定商取引法表記 -->
         <section id="legal">
             <h2>特定商取引法に基づく表記</h2>
-            <table>
-                <tr>
-                    <th>販売事業者の名称</th>
-                    <td>MAoS</td>
-                </tr>
-                <tr>
-                    <th>代表者または責任者の氏名</th>
-                    <td>荒蒔雅人</td>
-                </tr>
-                <tr>
-                    <th>住所</th>
-                    <td>栃木県宇都宮市ゆいの杜3-10-1　グランフォレストE棟101</td>
-                </tr>
-                <tr>
-                    <th>電話番号</th>
-                    <td>090-7723-6383</td>
-                </tr>
-                <tr>
-                    <th>商品の販売価格</th>
-                    <td>9800円から</td>
-                </tr>
-                <tr>
-                    <th>商品代金以外の必要料金</th>
-                    <td>なし</td>
-                </tr>
-                <tr>
-                    <th>支払い方法と支払い時期</th>
-                    <td>クレジットカードまたは銀行振込</td>
-                </tr>
-                <tr>
-                    <th>商品の引き渡し時期</th>
-                    <td>即日</td>
-                </tr>
-                <tr>
-                    <th>返品・交換・キャンセルの条件</th>
-                    <td>14日以内にキャンセルいただけば全額返金いたします。</td>
-                </tr>
-            </table>
+            <p>法的に必要な情報はこちらをご覧ください。</p>
         </section>
     </div>
     <footer>
