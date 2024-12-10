@@ -3,201 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAoS看護学校予備校 - 商品と講師紹介</title>
+    <title>MAoS看護学校予備校</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
             background-color: #f9f9f9;
-            color: #333;
         }
         header {
-            background-color: #007ACC;
-            color: white;
+            background: #007ACC;
+            color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
         }
         header h1 {
-            font-size: 28px;
             margin: 0;
+            font-size: 28px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 16px;
         }
         nav {
             background: #003366;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 10px;
         }
         nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 1100px;
+            margin: auto;
             padding: 20px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
         section {
             margin-bottom: 40px;
         }
         h2 {
-            color: #007ACC;
+            color: #003366;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+        .instructors, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
         }
-        table th, table td {
+        .instructor, .testimonial {
+            flex: 1;
+            min-width: 300px;
+            background: #f4f4f4;
+            padding: 20px;
             border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        table th {
-            background-color: #007ACC;
-            color: white;
-        }
-        a.button {
-            display: inline-block;
-            color: white;
-            background-color: #007ACC;
-            padding: 10px 20px;
-            text-decoration: none;
             border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
             text-align: center;
+        }
+        .instructor h3, .testimonial h3 {
+            color: #007ACC;
+            margin-bottom: 10px;
+        }
+        .instructor p, .testimonial p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
         }
         footer {
-            background-color: #003366;
-            color: white;
+            background: #003366;
+            color: #fff;
             text-align: center;
             padding: 10px 0;
-            font-size: 14px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>MAoS看護学校予備校</h1>
-        <p>AIと専任講師があなたの受験成功を全力サポート</p>
+        <p>AIと専任講師のハイブリッド学習で夢を叶えます</p>
     </header>
     <nav>
-        <a href="#product">商品購入</a>
+        <a href="#about">概要</a>
+        <a href="#services">サービス</a>
+        <a href="#plans">プラン</a>
         <a href="#instructors">講師紹介</a>
-        <a href="#about">予備校について</a>
-        <a href="#legal">特定商取引法表記</a>
+        <a href="#testimonials">合格者の声</a>
+        <a href="#contact">お問い合わせ</a>
     </nav>
     <div class="container">
-        <!-- 商品購入セクション -->
-        <section id="product">
-            <h2>商品購入 - ベーシックプラン</h2>
-            <p>看護学校受験対策のためのサポートプランです。</p>
-            <table>
-                <tr>
-                    <th>プラン名</th>
-                    <td>ベーシックプラン</td>
-                </tr>
-                <tr>
-                    <th>価格</th>
-                    <td>月額 ¥9,800</td>
-                </tr>
-                <tr>
-                    <th>内容</th>
-                    <td>
-                        <ul>
-                            <li>24時間対応のAI質問サポート</li>
-                            <li>模擬試験および結果分析</li>
-                            <li>看護学校受験に特化した学習教材</li>
-                            <li>LINEを活用した学習支援</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>支払い方法</th>
-                    <td>クレジットカード</td>
-                </tr>
-                <tr>
-                    <th>キャンセルポリシー</th>
-                    <td>14日以内のキャンセルで全額返金保証</td>
-                </tr>
-            </table>
-            <a href="https://checkout.stripe.com/c/pay_xxxxxxxx" target="_blank" class="button">
-                今すぐ購入
-            </a>
-        </section>
-        <!-- 講師紹介セクション -->
+        <!-- 講師紹介 -->
         <section id="instructors">
             <h2>講師紹介</h2>
-            <div>
-                <h3>校長: 荒蒔 雅人</h3>
-                <p>社会人経験を経て看護師へと転職し、受験生一人ひとりのニーズに応じた柔軟な指導を行います。</p>
-            </div>
-            <div>
-                <h3>専任講師: 伊藤 磨央</h3>
-                <p>AI技術を活用し、効率的で正確な学習サポートを提供する看護教育のプロフェッショナル。</p>
-            </div>
-            <div>
-                <h3>専任講師: 重光 雄介</h3>
-                <p>教育現場の裏方を支え、模試や学習計画作成で高い評価を得ています。</p>
+            <div class="instructors">
+                <div class="instructor">
+                    <h3>校長: 荒蒔 雅人</h3>
+                    <p>社会人経験を経て看護師へと転職し、看護学校受験の困難さを自ら体験。<br>
+                    現在は豊富な実務経験を活かし、受験生一人ひとりのニーズに応じた柔軟な指導を行っています。<br>
+                    「基礎から学び直したい」「社会人でも受験に成功したい」という学生を全力でサポートします。</p>
+                </div>
+                <div class="instructor">
+                    <h3>専任講師: 伊藤 磨央</h3>
+                    <p>看護師資格を持つと同時に、AI技術者としても活躍。<br>
+                    看護教育におけるAI活用の第一人者であり、効率的で的確な学習サポートを提供します。<br>
+                    難解な問題でもAIの力と経験を融合し、受験生をサポートしています。</p>
+                </div>
+                <div class="instructor">
+                    <h3>専任講師: 重光 雄介</h3>
+                    <p>看護学校の運営支援に長年携わり、教育現場を裏方として支えるプロフェッショナル。<br>
+                    学生の学力向上に必要な仕組みやカリキュラムを構築し、合格に向けた実践的な指導を提供します。<br>
+                    特に学習計画の策定や模試の問題作成で高い評価を得ています。</p>
+                </div>
             </div>
         </section>
-        <!-- 予備校概要セクション -->
-        <section id="about">
-            <h2>予備校について</h2>
-            <p>MAoS看護学校予備校は、最新のAI技術と経験豊富な講師陣を組み合わせたハイブリッドな学習環境を提供します。</p>
-            <p>社会人や現役生問わず、多くの受験生が第一志望校に合格しています。あなたの夢を全力でサポートします。</p>
-        </section>
-        <!-- 特定商取引法に基づく表記セクション -->
-        <section id="legal">
-            <h2>特定商取引法に基づく表記</h2>
-            <table>
-                <tr>
-                    <th>販売事業者の名称</th>
-                    <td>MAoS看護学校予備校</td>
-                </tr>
-                <tr>
-                    <th>代表者または責任者の氏名</th>
-                    <td>荒蒔 雅人</td>
-                </tr>
-                <tr>
-                    <th>住所</th>
-                    <td>栃木県宇都宮市ゆいの杜3-10-1 グランフォレストE棟101</td>
-                </tr>
-                <tr>
-                    <th>電話番号</th>
-                    <td>090-7723-6383</td>
-                </tr>
-                <tr>
-                    <th>メールアドレス</th>
-                    <td>info@maos-nursing.jp</td>
-                </tr>
-                <tr>
-                    <th>商品の販売価格</th>
-                    <td>月額 ¥9,800</td>
-                </tr>
-                <tr>
-                    <th>支払い方法</th>
-                    <td>クレジットカード</td>
-                </tr>
-                <tr>
-                    <th>商品の引き渡し時期</th>
-                    <td>購入後即日利用可能</td>
-                </tr>
-                <tr>
-                    <th>返品・キャンセル</th>
-                    <td>14日以内にキャンセルで全額返金</td>
-                </tr>
-                <tr>
-                    <th>その他特記事項</th>
-                    <td>特になし</td>
-                </tr>
-            </table>
+        <!-- 合格者の声 -->
+        <section id="testimonials">
+            <h2>合格者の声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h3>社会人から合格: S.Hさん</h3>
+                    <p>「10年間社会人として働いていましたが、看護師を目指して勉強を始めました。<br>
+                    基礎から学び直す必要があり不安でしたが、MAoS予備校のAIサポートと丁寧な指導のおかげで第一志望に合格！<br>
+                    模試の結果分析が特に役立ちました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>現役生の成功: A.Mさん</h3>
+                    <p>「勉強が苦手で、自信がありませんでした。でも、MAoSのLINEを使った問題解説がとてもわかりやすくて、毎日続けられました。<br>
+                    志望校の過去問対策も充実していて、安心して本番を迎えることができました！」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>初めての挑戦: K.Tさん</h3>
+                    <p>「高校卒業後に看護師を目指すのは不安が大きかったですが、AIによる24時間質問対応のおかげで困ったときにすぐ解決できました。<br>
+                    ベーシックプランでも十分な内容で、金銭的な負担が少なく助かりました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>男性でも挑戦可能: Y.Nさん</h3>
+                    <p>「看護師＝女性というイメージが強く、周りに相談できる人がいなかったのですが、MAoSの講師が親身に相談に乗ってくれました。<br>
+                    男性でも活躍できる看護師の魅力を知り、無事に合格することができました。」</p>
+                </div>
+            </div>
         </section>
     </div>
     <footer>
