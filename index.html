@@ -48,13 +48,13 @@
         h2 {
             color: #003366;
         }
-        .instructors, .testimonials {
+        .plans {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: space-between;
         }
-        .instructor, .testimonial {
+        .plan {
             flex: 1;
             min-width: 300px;
             background: #f4f4f4;
@@ -63,14 +63,25 @@
             border-radius: 5px;
             text-align: center;
         }
-        .instructor h3, .testimonial h3 {
+        .plan h3 {
             color: #007ACC;
             margin-bottom: 10px;
         }
-        .instructor p, .testimonial p {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #007ACC;
+            color: #fff;
         }
         footer {
             background: #003366;
@@ -90,61 +101,67 @@
         <a href="#about">概要</a>
         <a href="#services">サービス</a>
         <a href="#plans">プラン</a>
-        <a href="#instructors">講師紹介</a>
-        <a href="#testimonials">合格者の声</a>
-        <a href="#contact">お問い合わせ</a>
+        <a href="#comparison">他社との比較</a>
+        <a href="#legal">特定商取引法に基づく表示</a>
     </nav>
     <div class="container">
-        <!-- 講師紹介 -->
-        <section id="instructors">
-            <h2>講師紹介</h2>
-            <div class="instructors">
-                <div class="instructor">
-                    <h3>校長: 荒蒔 雅人</h3>
-                    <p>社会人経験を経て看護師へと転職し、看護学校受験の困難さを自ら体験。<br>
-                    現在は豊富な実務経験を活かし、受験生一人ひとりのニーズに応じた柔軟な指導を行っています。<br>
-                    「基礎から学び直したい」「社会人でも受験に成功したい」という学生を全力でサポートします。</p>
+        <!-- プラン紹介 -->
+        <section id="plans">
+            <h2>プラン紹介</h2>
+            <div class="plans">
+                <div class="plan">
+                    <h3>ベーシックプラン</h3>
+                    <p>月額: 5,000円<br>内容: LINEによる24時間質問対応、基礎科目サポート</p>
                 </div>
-                <div class="instructor">
-                    <h3>専任講師: 伊藤 磨央</h3>
-                    <p>看護師資格を持つと同時に、AI技術者としても活躍。<br>
-                    看護教育におけるAI活用の第一人者であり、効率的で的確な学習サポートを提供します。<br>
-                    難解な問題でもAIの力と経験を融合し、受験生をサポートしています。</p>
-                </div>
-                <div class="instructor">
-                    <h3>専任講師: 重光 雄介</h3>
-                    <p>看護学校の運営支援に長年携わり、教育現場を裏方として支えるプロフェッショナル。<br>
-                    学生の学力向上に必要な仕組みやカリキュラムを構築し、合格に向けた実践的な指導を提供します。<br>
-                    特に学習計画の策定や模試の問題作成で高い評価を得ています。</p>
+                <div class="plan">
+                    <h3>プレミアムプラン</h3>
+                    <p>月額: 10,000円<br>内容: ベーシックプランの内容に加え、専任講師による個別指導や解剖生理学の特別レクチャー</p>
                 </div>
             </div>
         </section>
-        <!-- 合格者の声 -->
-        <section id="testimonials">
-            <h2>合格者の声</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <h3>社会人から合格: S.Hさん</h3>
-                    <p>「10年間社会人として働いていましたが、看護師を目指して勉強を始めました。<br>
-                    基礎から学び直す必要があり不安でしたが、MAoS予備校のAIサポートと丁寧な指導のおかげで第一志望に合格！<br>
-                    模試の結果分析が特に役立ちました。」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>現役生の成功: A.Mさん</h3>
-                    <p>「勉強が苦手で、自信がありませんでした。でも、MAoSのLINEを使った問題解説がとてもわかりやすくて、毎日続けられました。<br>
-                    志望校の過去問対策も充実していて、安心して本番を迎えることができました！」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>初めての挑戦: K.Tさん</h3>
-                    <p>「高校卒業後に看護師を目指すのは不安が大きかったですが、AIによる24時間質問対応のおかげで困ったときにすぐ解決できました。<br>
-                    ベーシックプランでも十分な内容で、金銭的な負担が少なく助かりました。」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>男性でも挑戦可能: Y.Nさん</h3>
-                    <p>「看護師＝女性というイメージが強く、周りに相談できる人がいなかったのですが、MAoSの講師が親身に相談に乗ってくれました。<br>
-                    男性でも活躍できる看護師の魅力を知り、無事に合格することができました。」</p>
-                </div>
-            </div>
+        <!-- 他社との比較 -->
+        <section id="comparison">
+            <h2>他社との比較</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>MAoS看護学校予備校</th>
+                        <th>他社A</th>
+                        <th>他社B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>授業形式</td>
+                        <td>個別家庭教師方式</td>
+                        <td>教室授業</td>
+                        <td>オンライン動画</td>
+                    </tr>
+                    <tr>
+                        <td>質問対応</td>
+                        <td>24時間LINEサポート</td>
+                        <td>授業時間のみ</td>
+                        <td>メール対応（翌営業日）</td>
+                    </tr>
+                    <tr>
+                        <td>料金</td>
+                        <td>月額5,000円～</td>
+                        <td>月額15,000円～</td>
+                        <td>月額10,000円～</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- 特定商取引法に基づく表示 -->
+        <section id="legal">
+            <h2>特定商取引法に基づく表示</h2>
+            <p>運営会社: MAoS教育サポート合同会社<br>
+            所在地: 東京都新宿区〇〇〇〇<br>
+            お問い合わせ先: info@maos-nursing-school.com<br>
+            販売価格: 各プランに記載<br>
+            お支払い方法: クレジットカード、LINE Pay<br>
+            返品・キャンセル: サービス提供後のキャンセルは不可</p>
         </section>
     </div>
     <footer>
