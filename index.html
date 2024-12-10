@@ -61,60 +61,13 @@
         h2 {
             color: #003366;
         }
-        .plans {
+        .testimonials {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
         }
-        .plan {
-            flex: 1;
-            max-width: 300px;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .plan:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .plan h3 {
-            margin-bottom: 10px;
-            font-size: 20px;
-            color: #007ACC;
-        }
-        .plan p {
-            margin: 10px 0;
-        }
-        .cta-buttons {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .cta-buttons a {
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 5px;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        .cta-buttons .consultation {
-            background: #ff6600;
-            color: #fff;
-        }
-        .cta-buttons .apply {
-            background: #007ACC;
-            color: #fff;
-        }
-        .team, .testimonials {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .team-member, .testimonial {
+        .testimonial {
             flex: 1;
             max-width: 300px;
             background: #fff;
@@ -123,9 +76,24 @@
             text-align: center;
             padding: 20px;
         }
-        .team-member h3, .testimonial h3 {
+        .testimonial h3 {
             color: #007ACC;
             margin-bottom: 10px;
+        }
+        .team, .plans {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .team-member, .plan {
+            flex: 1;
+            max-width: 300px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
         }
         table {
             width: 100%;
@@ -171,97 +139,31 @@
         <a href="#legal">特定商取引法に基づく表示</a>
     </nav>
     <div class="container">
-        <!-- プラン紹介 -->
-        <section id="plans">
-            <h2>プラン紹介</h2>
-            <div class="plans">
-                <div class="plan">
-                    <h3>ライトプラン</h3>
-                    <p>月額: <strong>3,000円</strong></p>
-                    <p>✔ 国語・数学・理科のレクチャーのみ</p>
-                </div>
-                <div class="plan">
-                    <h3>ベーシックプラン</h3>
-                    <p>月額: <strong>5,000円</strong></p>
-                    <p>✔ 国語・数学・理科の他、面接・小論文対策（月1回まで）</p>
-                </div>
-                <div class="plan">
-                    <h3>プレミアムプラン</h3>
-                    <p>月額: <strong>10,000円</strong></p>
-                    <p>✔ 面接対策制限なし</p>
-                    <p>✔ 国語・数学・理科対策込み</p>
-                    <p>✔ 解剖生理学の基礎もレクチャー</p>
-                </div>
-            </div>
-        </section>
-        <!-- 行動喚起ボタン -->
-        <div class="cta-buttons">
-            <a href="#consultation" class="consultation">まずは無料相談から</a>
-            <a href="#apply" class="apply">申し込みはこちら</a>
-        </div>
-        <!-- 他社との比較 -->
-        <section id="comparison">
-            <h2>他社との比較</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>項目</th>
-                        <th>MAoS看護学校予備校</th>
-                        <th>他社A</th>
-                        <th>他社B</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>授業形式</td>
-                        <td>個別家庭教師方式</td>
-                        <td>教室授業</td>
-                        <td>オンライン動画</td>
-                    </tr>
-                    <tr>
-                        <td>質問対応</td>
-                        <td>24時間LINEサポート</td>
-                        <td>授業時間のみ</td>
-                        <td>メール対応（翌営業日）</td>
-                    </tr>
-                    <tr>
-                        <td>料金</td>
-                        <td>月額3,000円～</td>
-                        <td>月額15,000円～</td>
-                        <td>月額10,000円～</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
         <!-- 合格者の声 -->
         <section id="testimonials">
             <h2>合格者の声</h2>
             <div class="testimonials">
                 <div class="testimonial">
-                    <h3>佐藤花子さん</h3>
+                    <h3>Hanako S.</h3>
                     <p>「プレミアムプランを利用して、夢だった看護学校に合格できました！」</p>
                 </div>
                 <div class="testimonial">
-                    <h3>田中太郎さん</h3>
+                    <h3>Taro T.</h3>
                     <p>「仕事をしながら学習できる環境が整っていて安心でした。」</p>
                 </div>
             </div>
-        </section>
-        <!-- 講師紹介 -->
-        <section id="team">
-            <h2>講師紹介</h2>
-            <div class="team">
-                <div class="team-member">
-                    <h3>校長: 荒蒔雅人</h3>
-                    <p>社会人から看護師への転身をサポートしてきた経験を活かします。</p>
+            <h2>現役生の声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h3>Yuki K.</h3>
+                    <p>「基礎科目から丁寧に指導してもらい、試験への不安がなくなりました。」</p>
                 </div>
-                <div class="team-member">
-                    <h3>講師: 伊藤磨央</h3>
-                    <p>AIエンジニア兼看護師。テクノロジーと看護の融合を指導に活かします。</p>
-                </div>
-                <div class="team-member">
-                    <h3>講師: 重光雄介</h3>
-                    <p>看護学校勤務歴があり、多くの学生を支えてきた実績を誇ります。</p>
+            </div>
+            <h2>准看護学校受験者の声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h3>Naomi M.</h3>
+                    <p>「短期間で効率よく学べて、自信を持って試験に挑むことができました。」</p>
                 </div>
             </div>
         </section>
@@ -272,6 +174,10 @@
             <p>ご希望のプランを選択し、オンラインで申し込み手続きを行うだけで、すぐにご利用いただけます。</p>
             <h3>質問: 途中でプランを変更できますか？</h3>
             <p>はい、変更可能です。詳細はお問い合わせください。</p>
+            <h3>質問: サポート対応時間は？</h3>
+            <p>LINEによるサポートは24時間受け付けています。</p>
+            <h3>質問: 対面指導はありますか？</h3>
+            <p>原則オンラインですが、特別プランで対面指導を提供する場合もあります。お問い合わせください。</p>
         </section>
         <!-- 特定商取引法に基づく表示 -->
         <section id="legal">
