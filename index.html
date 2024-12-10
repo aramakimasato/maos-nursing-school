@@ -61,13 +61,13 @@
         h2 {
             color: #003366;
         }
-        .plans {
+        .plans, .team, .testimonials {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: space-between;
         }
-        .plan {
+        .plan, .team-member, .testimonial {
             flex: 1;
             min-width: 300px;
             background: #f4f4f4;
@@ -76,9 +76,25 @@
             border-radius: 5px;
             text-align: center;
         }
-        .plan h3 {
+        .plan h3, .team-member h3, .testimonial h3 {
             color: #007ACC;
             margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #007ACC;
+            color: #fff;
         }
         .cta {
             text-align: center;
@@ -143,6 +159,98 @@
                 </div>
             </div>
         </section>
+        <!-- 他社との比較 -->
+        <section id="comparison">
+            <h2>他社との比較</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>MAoS看護学校予備校</th>
+                        <th>他社A</th>
+                        <th>他社B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>授業形式</td>
+                        <td>個別家庭教師方式</td>
+                        <td>教室授業</td>
+                        <td>オンライン動画</td>
+                    </tr>
+                    <tr>
+                        <td>質問対応</td>
+                        <td>24時間LINEサポート</td>
+                        <td>授業時間のみ</td>
+                        <td>メール対応（翌営業日）</td>
+                    </tr>
+                    <tr>
+                        <td>料金</td>
+                        <td>月額3,000円～</td>
+                        <td>月額15,000円～</td>
+                        <td>月額10,000円～</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- 合格者の声 -->
+        <section id="testimonials">
+            <h2>合格者の声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h3>佐藤花子さん</h3>
+                    <p>「プレミアムプランを利用して、夢だった看護学校に合格できました！個別指導が本当に助かりました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>田中太郎さん</h3>
+                    <p>「仕事をしながら学習できる環境が整っていて、安心して勉強に専念できました。」</p>
+                </div>
+                <div class="testimonial">
+                    <h3>鈴木一郎さん</h3>
+                    <p>「わかりやすい解説と的確な指導のおかげで、試験への不安がなくなり、自信を持って挑めました。」</p>
+                </div>
+            </div>
+        </section>
+        <!-- 講師紹介 -->
+        <section id="team">
+            <h2>講師紹介</h2>
+            <div class="team">
+                <div class="team-member">
+                    <h3>校長: 荒蒔雅人</h3>
+                    <p>社会人から看護師への転身をサポートしてきた経験を活かし、学生の夢を応援します。</p>
+                </div>
+                <div class="team-member">
+                    <h3>講師: 伊藤磨央</h3>
+                    <p>AIエンジニア兼看護師。テクノロジーと看護の融合を指導に活かします。</p>
+                </div>
+                <div class="team-member">
+                    <h3>講師: 重光雄介</h3>
+                    <p>看護学校勤務歴があり、多くの学生を支えてきた実績を誇ります。</p>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <h3>質問: サービスの利用方法を教えてください。</h3>
+            <p>ご希望のプランを選択し、オンラインで申し込み手続きを行うだけで、すぐにご利用いただけます。</p>
+            <h3>質問: 途中でプランを変更できますか？</h3>
+            <p>はい、変更可能です。詳細はお問い合わせください。</p>
+        </section>
+        <!-- 特定商取引法に基づく表示 -->
+        <section id="legal">
+            <h2>特定商取引法に基づく表示</h2>
+            <p>運営会社: MAoS教育サポート合同会社<br>
+            所在地: 東京都新宿区〇〇〇〇<br>
+            お問い合わせ先: info@maos-nursing-school.com<br>
+            販売価格: 各プランに記載<br>
+            お支払い方法: クレジットカード、LINE Pay<br>
+            返品・キャンセル: サービス提供後のキャンセルは不可</p>
+        </section>
+        <!-- 行動喚起 -->
+        <div class="cta">
+            <a href="#plans">今すぐ申し込む</a>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 MAoS看護学校予備校. All Rights Reserved.</p>
