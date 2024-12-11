@@ -48,7 +48,7 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
         }
         .container {
             max-width: 1100px;
@@ -60,6 +60,7 @@
         }
         h2 {
             color: #003366;
+            text-align: center;
         }
         .plans, .testimonials, .team, .success-stories, .common-mistakes, .post-support {
             display: flex;
@@ -127,6 +128,31 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
+        }
+        /* スマホ対応のレスポンシブデザイン */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 22px;
+            }
+            header p {
+                font-size: 14px;
+            }
+            .plan, .testimonial, .team-member, .story, .mistake, .post-support-item {
+                max-width: 100%;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            table {
+                font-size: 12px;
+            }
+            table th, table td {
+                padding: 8px;
+            }
         }
     </style>
 </head>
