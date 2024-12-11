@@ -69,23 +69,26 @@
             margin-bottom: 10px;
         }
         .cta-buttons {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin: 40px 0;
         }
         .cta-buttons a {
             text-decoration: none;
             padding: 15px 30px;
             border-radius: 5px;
-            margin: 0 10px;
             font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            width: 150px;
+            color: #fff;
         }
         .cta-buttons .consultation {
             background: #ff6600;
-            color: #fff;
         }
         .cta-buttons .apply {
             background: #007ACC;
-            color: #fff;
         }
         .notification {
             margin-top: 20px;
@@ -130,6 +133,12 @@
             nav a {
                 display: block;
                 margin: 5px 0;
+            }
+            .cta-buttons {
+                flex-direction: column;
+            }
+            .cta-buttons a {
+                width: 100%;
             }
             table {
                 font-size: 12px;
@@ -228,9 +237,8 @@
             <h2>よくある失敗例と解決策</h2>
             <ul>
                 <li><strong>失敗例:</strong> 独学で試験対策をした結果、勉強の方向性を見失った<br><strong>解決策:</strong> 個別指導で最適な学習プランを提供します。</li>
-                <li><strong>失敗例:</strong> 面接で緊張して本来の自分をアピールできなかった<br><                <strong>解決策:</strong> 模擬面接と徹底したフィードバックで、本番に自信を持てる準備をします。</li>
-                <li><strong>失敗例:</strong> 短期間で準備を詰め込みすぎて知識が中途半端になった<br>
-                <strong>解決策:</strong> 長期的な計画に基づき、必要な知識を段階的に習得できるサポートをご用意しています。</li>
+                <li><strong>失敗例:</strong> 面接で緊張して本来の自分をアピールできなかった<br><strong>解決策:</strong> 模擬面接と徹底したフィードバックで、本番に自信を持てる準備をします。</li>
+                <li><strong>失敗例:</strong> 短期間で準備を詰め込みすぎて知識が中途半端になった<br><strong>解決策:</strong> 長期的な計画に基づき、必要な知識を段階的に習得できるサポートをご用意しています。</li>
             </ul>
         </section>
         <!-- 卒業後のサポート -->
@@ -256,14 +264,10 @@
         <section id="faq">
             <h2>FAQ</h2>
             <ul>
-                <li><strong>質問:</strong> サービスの利用方法を教えてください。<br>
-                <strong>回答:</strong> ご希望のプランを選択し、オンラインで申し込み手続きを行うだけで、すぐにご利用いただけます。</li>
-                <li><strong>質問:</strong> 途中でプランを変更できますか？<br>
-                <strong>回答:</strong> はい、変更可能です。詳細はお問い合わせください。</li>
-                <li><strong>質問:</strong> サポート対応時間は？<br>
-                <strong>回答:</strong> LINEによるサポートは24時間受け付けています。</li>
-                <li><strong>質問:</strong> 対面指導はありますか？<br>
-                <strong>回答:</strong> 原則オンラインですが、特別プランで対面指導を提供する場合もあります。お問い合わせください。</li>
+                <li><strong>質問:</strong> サービスの利用方法を教えてください。<br><strong>回答:</strong> ご希望のプランを選択し、オンラインで申し込み手続きを行うだけで、すぐにご利用いただけます。</li>
+                <li><strong>質問:</strong> 途中でプランを変更できますか？<br><strong>回答:</strong> はい、変更可能です。詳細はお問い合わせください。</li>
+                <li><strong>質問:</strong> サポート対応時間は？<br><strong>回答:</strong> LINEによるサポートは24時間受け付けています。</li>
+                <li><strong>質問:</strong> 対面指導はありますか？<br><strong>回答:</strong> 原則オンラインですが、特別プランで対面指導を提供する場合もあります。お問い合わせください。</li>
             </ul>
         </section>
         <!-- 特定商取引法に基づく表示 -->
@@ -291,4 +295,3 @@
     </footer>
 </body>
 </html>
-
