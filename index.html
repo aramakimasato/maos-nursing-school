@@ -60,25 +60,12 @@
         }
         h2 {
             color: #003366;
-            text-align: center;
+            margin-bottom: 20px;
         }
-        .plans, .testimonials, .team, .success-stories, .common-mistakes, .post-support {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        ul, ol {
+            padding-left: 20px;
         }
-        .plan, .testimonial, .team-member, .story, .mistake, .post-support-item {
-            flex: 1;
-            max-width: 300px;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px;
-        }
-        .plan h3, .testimonial h3, .team-member h3, .story h3, .mistake h3 {
-            color: #007ACC;
+        ul li, ol li {
             margin-bottom: 10px;
         }
         .cta-buttons {
@@ -140,9 +127,6 @@
             header p {
                 font-size: 14px;
             }
-            .plan, .testimonial, .team-member, .story, .mistake, .post-support-item {
-                max-width: 100%;
-            }
             nav a {
                 display: block;
                 margin: 5px 0;
@@ -181,127 +165,106 @@
         <!-- プラン紹介 -->
         <section id="plans">
             <h2>プラン紹介</h2>
-            <div class="plans">
-                <div class="plan">
-                    <h3>ライトプラン</h3>
-                    <p>月額: <strong>3,000円</strong></p>
-                    <p>✔ 国語・数学・理科のレクチャーのみ</p>
-                </div>
-                <div class="plan">
-                    <h3>ベーシックプラン</h3>
-                    <p>月額: <strong>5,000円</strong></p>
-                    <p>✔ 国語・数学・理科の他、面接・小論文対策（月1回まで）</p>
-                </div>
-                <div class="plan">
-                    <h3>プレミアムプラン</h3>
-                    <p>月額: <strong>10,000円</strong></p>
-                    <p>✔ 面接対策制限なし</p>
-                    <p>✔ 国語・数学・理科対策込み</p>
-                    <p>✔ 解剖生理学の基礎もレクチャー</p>
-                </div>
-            </div>
+            <ul>
+                <li><strong>ライトプラン:</strong> 月額3,000円 - 国語・数学・理科のレクチャーのみ</li>
+                <li><strong>ベーシックプラン:</strong> 月額5,000円 - 国語・数学・理科の他、面接・小論文対策（月1回まで）</li>
+                <li><strong>プレミアムプラン:</strong> 月額10,000円 - 面接対策制限なし、国語・数学・理科対策込み、解剖生理学の基礎もレクチャー</li>
+            </ul>
+        </section>
+        <!-- 他社との比較 -->
+        <section id="comparison">
+            <h2>他社との比較</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>MAoS看護学校予備校</th>
+                        <th>他社A</th>
+                        <th>他社B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>授業形式</td>
+                        <td>個別家庭教師方式</td>
+                        <td>教室授業</td>
+                        <td>オンライン動画</td>
+                    </tr>
+                    <tr>
+                        <td>質問対応</td>
+                        <td>24時間LINEサポート</td>
+                        <td>授業時間のみ</td>
+                        <td>メール対応（翌営業日）</td>
+                    </tr>
+                    <tr>
+                        <td>料金</td>
+                        <td>月額3,000円～</td>
+                        <td>月額15,000円～</td>
+                        <td>月額10,000円～</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <!-- 受講者の声 -->
         <section id="testimonials">
             <h2>受講者の声</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <h3>H.S.</h3>
-                    <p>「プレミアムプランを利用して、夢だった看護学校に合格できました！」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>T.T.</h3>
-                    <p>「仕事をしながら学習できる環境が整っていて安心でした。」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>Y.K.</h3>
-                    <p>「基礎科目から丁寧に指導してもらい、試験への不安がなくなりました。」</p>
-                </div>
-                <div class="testimonial">
-                    <h3>N.M.</h3>
-                    <p>「短期間で効率よく学べて、自信を持って試験に挑むことができました。」</p>
-                </div>
-            </div>
+            <ul>
+                <li><strong>H.S.</strong>「プレミアムプランを利用して、夢だった看護学校に合格できました！」</li>
+                <li><strong>T.T.</strong>「仕事をしながら学習できる環境が整っていて安心でした。」</li>
+                <li><strong>Y.K.</strong>「基礎科目から丁寧に指導してもらい、試験への不安がなくなりました。」</li>
+                <li><strong>N.M.</strong>「短期間で効率よく学べて、自信を持って試験に挑むことができました。」</li>
+            </ul>
         </section>
         <!-- 成功ストーリー -->
         <section id="success-stories">
             <h2>成功ストーリー</h2>
-            <div class="success-stories">
-                <div class="story">
-                    <h3>M.K.さん (30代, 主婦)</h3>
-                    <p>「子育てをしながら看護学校を目指していました。ベーシックプランで効率よく学べたおかげで、短期間で合格ラインを突破！専任講師のサポートがなければここまで来られませんでした。」</p>
-                </div>
-                <div class="story">
-                    <h3>R.Y.さん (20代, フリーター)</h3>
-                    <p>「アルバイトをしながらプレミアムプランを受講しました。小論文の指導がとても的確で、志望校の先生からも高評価をいただけました！」</p>
-                </div>
-            </div>
+            <ul>
+                <li><strong>M.K.さん (30代, 主婦)</strong>「子育てをしながら看護学校を目指していました。ベーシックプランで効率よく学べたおかげで、短期間で合格ラインを突破！」</li>
+                <li><strong>R.Y.さん (20代, フリーター)</strong>「アルバイトをしながらプレミアムプランを受講しました。小論文の指導が的確で、志望校の先生からも高評価をいただけました！」</li>
+            </ul>
         </section>
         <!-- よくある失敗例と解決策 -->
         <section id="common-mistakes">
             <h2>よくある失敗例と解決策</h2>
-            <div class="common-mistakes">
-                <div class="mistake">
-                    <h3>失敗例: 独学で試験対策をした結果、勉強の方向性を見                    <h3>失敗例: 独学で試験対策をした結果、勉強の方向性を見失った</h3>
-                    <p>解決策: MAoSでは個別指導であなたに最適な学習プランを提供します。</p>
-                </div>
-                <div class="mistake">
-                    <h3>失敗例: 面接で緊張して本来の自分をアピールできなかった</h3>
-                    <p>解決策: 模擬面接と徹底したフィードバックで、本番に自信を持てる準備をします。</p>
-                </div>
-                <div class="mistake">
-                    <h3>失敗例: 短期間で準備しすぎて知識が中途半端になった</h3>
-                    <p>解決策: 長期的な計画に基づき、必要な知識を段階的に習得できるサポートをご用意しています。</p>
-                </div>
-            </div>
+            <ul>
+                <li><strong>失敗例:</strong> 独学で試験対策をした結果、勉強の方向性を見失った<br><strong>解決策:</strong> 個別指導で最適な学習プランを提供します。</li>
+                <li><strong>失敗例:</strong> 面接で緊張して本来の自分をアピールできなかった<br><                <strong>解決策:</strong> 模擬面接と徹底したフィードバックで、本番に自信を持てる準備をします。</li>
+                <li><strong>失敗例:</strong> 短期間で準備を詰め込みすぎて知識が中途半端になった<br>
+                <strong>解決策:</strong> 長期的な計画に基づき、必要な知識を段階的に習得できるサポートをご用意しています。</li>
+            </ul>
         </section>
         <!-- 卒業後のサポート -->
         <section id="post-support">
             <h2>卒業後のサポート</h2>
-            <div class="post-support">
-                <div class="post-support-item">
-                    <p>✔ 看護学校での学習に役立つ基礎知識の復習資料を提供</p>
-                </div>
-                <div class="post-support-item">
-                    <p>✔ 勉強方法のアドバイスを1年間提供</p>
-                </div>
-                <div class="post-support-item">
-                    <p>✔ 定期的な相談対応（LINEまたはメール）</p>
-                </div>
-                <div class="post-support-item">
-                    <p>✔ 看護学校入学後の課題サポート</p>
-                </div>
-            </div>
+            <ul>
+                <li>✔ 看護学校での学習に役立つ基礎知識の復習資料を提供</li>
+                <li>✔ 勉強方法のアドバイスを1年間提供</li>
+                <li>✔ 定期的な相談対応（LINEまたはメール）</li>
+                <li>✔ 看護学校入学後の課題サポート</li>
+            </ul>
         </section>
         <!-- 講師紹介 -->
         <section id="team">
             <h2>講師紹介</h2>
-            <div class="team">
-                <div class="team-member">
-                    <h3>校長: 荒蒔雅人</h3>
-                    <p>社会人から看護師への転身をサポートしてきた経験を活かし、学生の夢を応援します。</p>
-                </div>
-                <div class="team-member">
-                    <h3>講師: 伊藤磨央</h3>
-                    <p>AIエンジニア兼看護師。テクノロジーと看護の融合を指導に活かします。</p>
-                </div>
-                <div class="team-member">
-                    <h3>講師: 重光雄介</h3>
-                    <p>看護学校勤務歴があり、多くの学生を支えてきた実績を誇ります。</p>
-                </div>
-            </div>
+            <ul>
+                <li><strong>校長: 荒蒔雅人</strong><br>社会人から看護師への転身をサポートしてきた経験を活かし、学生の夢を応援します。</li>
+                <li><strong>講師: 伊藤磨央</strong><br>AIエンジニア兼看護師。テクノロジーと看護の融合を指導に活かします。</li>
+                <li><strong>講師: 重光雄介</strong><br>看護学校勤務歴があり、多くの学生を支えてきた実績を誇ります。</li>
+            </ul>
         </section>
         <!-- FAQ -->
         <section id="faq">
             <h2>FAQ</h2>
-            <h3>質問: サービスの利用方法を教えてください。</h3>
-            <p>ご希望のプランを選択し、オンラインで申し込み手続きを行うだけで、すぐにご利用いただけます。</p>
-            <h3>質問: 途中でプランを変更できますか？</h3>
-            <p>はい、変更可能です。詳細はお問い合わせください。</p>
-            <h3>質問: サポート対応時間は？</h3>
-            <p>LINEによるサポートは24時間受け付けています。</p>
-            <h3>質問: 対面指導はありますか？</h3>
-            <p>原則オンラインですが、特別プランで対面指導を提供する場合もあります。お問い合わせください。</p>
+            <ul>
+                <li><strong>質問:</strong> サービスの利用方法を教えてください。<br>
+                <strong>回答:</strong> ご希望のプランを選択し、オンラインで申し込み手続きを行うだけで、すぐにご利用いただけます。</li>
+                <li><strong>質問:</strong> 途中でプランを変更できますか？<br>
+                <strong>回答:</strong> はい、変更可能です。詳細はお問い合わせください。</li>
+                <li><strong>質問:</strong> サポート対応時間は？<br>
+                <strong>回答:</strong> LINEによるサポートは24時間受け付けています。</li>
+                <li><strong>質問:</strong> 対面指導はありますか？<br>
+                <strong>回答:</strong> 原則オンラインですが、特別プランで対面指導を提供する場合もあります。お問い合わせください。</li>
+            </ul>
         </section>
         <!-- 特定商取引法に基づく表示 -->
         <section id="legal">
